@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
+              <span class="suite-name border-passed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+                    <span>C:\Users\SADEPU\AppData\Local\Temp\testng-eclipse--975841959\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.cop.api.tests.Verify_JWT_Headers" class="method navigator-link" hash-for-method="verifyHeaders">verifyHeaders</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cop.api.tests.Verify_JWT_Headers</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHeaders">
+                  </a> <!-- verifyHeaders -->
+                  <span class="method-name">verifyHeaders</span>
+                  <em>
+(Verify JWT Token Headers)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\SADEPU\AppData\Local\Temp\testng-eclipse--975841959\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.cop.api.tests.Verify_JWT_Headers&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyHeaders')
+data.setCell(0, 2, 'com.cop.api.tests.Verify_JWT_Headers')
+data.setCell(0, 3, 788);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 788 ms</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyHeaders</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Generated JWT Token value is :eyJraWQiOiJsbTUwZEhMZDBpa1FUYlFrMFpVcGtKa2hDczQiLCJ0eXAiOiJKV1QiLCJhbGciOiJQUzI1NiJ9.eyJ0b2tlbl9lbmRwb2ludF9hdXRoX3NpZ25pbmdfYWxnIjoiUFMyNTYiLCJncmFudF90eXBlcyI6WyJhdXRob3JpemF0aW9uX2NvZGUiLCJjbGllbnRfY3JlZGVudGlhbHMiXSwiYXBwbGljYXRpb25fdHlwZSI6IndlYiIsImlzcyI6ImRzZ2xTMVNxQkcxaDJrSGMzRnp3OG0iLCJyZWRpcmVjdF91cmlzIjpbImh0dHBzOlwvXC90ZWNobm94YW5kZXIuY29tXC8iXSwidG9rZW5fZW5kcG9pbnRfYXV0aF9tZXRob2QiOiJwcml2YXRlX2tleV9qd3QiLCJzb2Z0d2FyZV9pZCI6ImRzZ2xTMVNxQkcxaDJrSGMzRnp3OG0iLCJzb2Z0d2FyZV9zdGF0ZW1lbnQiOiJleUpoYkdjaU9pSlFVekkxTmlJc0ltdHBaQ0k2SW1SNmNYVjNVMVJ1YlVGaU4wb3dNV1JXUkdaSmQyb3hTMWN0WVVRNE0xUllUVEZ0Vm1Kdk9XdGtSV3M5SWl3aWRIbHdJam9pU2xkVUluMC5leUpwYzNNaU9pSlBjR1Z1UW1GdWEybHVaeUJNZEdRaUxDSnBZWFFpT2pFMk5qZ3dOelU1Tmprc0ltcDBhU0k2SWpJM1pEQTVPV1F5TlRjellUUmhZalVpTENKemIyWjBkMkZ5WlY5bGJuWnBjbTl1YldWdWRDSTZJbk5oYm1SaWIzZ2lMQ0p6YjJaMGQyRnlaVjl0YjJSbElqb2lWR1Z6ZENJc0luTnZablIzWVhKbFgybGtJam9pWkhObmJGTXhVM0ZDUnpGb01tdElZek5HZW5jNGJTSXNJbk52Wm5SM1lYSmxYMk5zYVdWdWRGOXBaQ0k2SW1SeloyeFRNVk54UWtjeGFESnJTR016Um5wM09HMGlMQ0p6YjJaMGQyRnlaVjlqYkdsbGJuUmZibUZ0WlNJNklsUmxjM1JwYm1jZ1EyOVFJaXdpYzI5bWRIZGhjbVZmWTJ4cFpXNTBYMlJsYzJOeWFYQjBhVzl1SWpvaVZHOGdWR1Z6ZENCRGIxQWlMQ0p6YjJaMGQyRnlaVjkyWlhKemFXOXVJam94TGpFc0luTnZablIzWVhKbFgyTnNhV1Z1ZEY5MWNta2lPaUpvZEhSd2N6b3ZMM1JsWTJodWIzaGhibVJsY2k1amIyMHZJaXdpYzI5bWRIZGhjbVZmY21Wa2FYSmxZM1JmZFhKcGN5STZXeUpvZEhSd2N6b3ZMM1JsWTJodWIzaGhibVJsY2k1amIyMHZJbDBzSW5OdlpuUjNZWEpsWDNKdmJHVnpJanBiSWtGVFVGTlFJbDBzSW05eVoyRnVhWE5oZEdsdmJsOWpiMjF3WlhSbGJuUmZZWFYwYUc5eWFYUjVYMk5zWVdsdGN5STZleUpoZFhSb2IzSnBkSGxmYVdRaU9pSlBRa2RDVWlJc0luSmxaMmx6ZEhKaGRHbHZibDlwWkNJNklsVnVhMjV2ZDI0d01ERTBTREF3TURBeGJFWkZPV0pSUVVjaUxDSnpkR0YwZFhNaU9pSkJZM1JwZG1VaUxDSmhkWFJvYjNKcGMyRjBhVzl1Y3lJNlczc2liV1Z0WW1WeVgzTjBZWFJsSWpvaVIwSWlMQ0p5YjJ4bGN5STZXeUpRU1ZOUUlpd2lRVWxUVUNJc0lrRlRVRk5RSWl3aVEwSlFTVWtpWFgwc2V5SnRaVzFpWlhKZmMzUmhkR1VpT2lKSlJTSXNJbkp2YkdWeklqcGJJa05DVUVsSklpd2lRVWxUVUNJc0lsQkpVMUFpTENKQlUxQlRVQ0pkZlN4N0ltMWxiV0psY2w5emRHRjBaU0k2SWs1TUlpd2ljbTlzWlhNaU9sc2lRMEpRU1VraUxDSkJTVk5RSWl3aVFWTlFVMUFpTENKUVNWTlFJbDE5WFgwc0luTnZablIzWVhKbFgyeHZaMjlmZFhKcElqb2lhSFIwY0hNNkx5OTBaV05vYm05NFlXNWtaWEl1WTI5dEx5SXNJbTl5WjE5emRHRjBkWE1pT2lKQlkzUnBkbVVpTENKdmNtZGZhV1FpT2lJd01ERTBTREF3TURBeGJFWkZPV0pSUVVjaUxDSnZjbWRmYm1GdFpTSTZJbFJGUTBoT1QxaEJUa1JGVWlCRFQwNVRWVXhVU1U1SElFeEpUVWxVUlVRaUxDSnZjbWRmWTI5dWRHRmpkSE1pT2x0ZExDSnZjbWRmYW5kcmMxOWxibVJ3YjJsdWRDSTZJbWgwZEhCek9pOHZhMlY1YzNSdmNtVXViM0JsYm1KaGJtdHBibWQwWlhOMExtOXlaeTUxYXk4d01ERTBTREF3TURBeGJFWkZPV0pSUVVjdk1EQXhORWd3TURBd01XeEdSVGxpVVVGSExtcDNhM01pTENKdmNtZGZhbmRyYzE5eVpYWnZhMlZrWDJWdVpIQnZhVzUwSWpvaWFIUjBjSE02THk5clpYbHpkRzl5WlM1dmNHVnVZbUZ1YTJsdVozUmxjM1F1YjNKbkxuVnJMekF3TVRSSU1EQXdNREZzUmtVNVlsRkJSeTl5WlhadmEyVmtMekF3TVRSSU1EQXdNREZzUmtVNVlsRkJSeTVxZDJ0eklpd2ljMjltZEhkaGNtVmZhbmRyYzE5bGJtUndiMmx1ZENJNkltaDBkSEJ6T2k4dmEyVjVjM1J2Y21VdWIzQmxibUpoYm10cGJtZDBaWE4wTG05eVp5NTFheTh3TURFMFNEQXdNREF4YkVaRk9XSlJRVWN2WkhObmJGTXhVM0ZDUnpGb01tdElZek5HZW5jNGJTNXFkMnR6SWl3aWMyOW1kSGRoY21WZmFuZHJjMTl5WlhadmEyVmtYMlZ1WkhCdmFXNTBJam9pYUhSMGNITTZMeTlyWlhsemRHOXlaUzV2Y0dWdVltRnVhMmx1WjNSbGMzUXViM0puTG5Wckx6QXdNVFJJTURBd01ERnNSa1U1WWxGQlJ5OXlaWFp2YTJWa0wyUnpaMnhUTVZOeFFrY3hhREpyU0dNelJucDNPRzB1YW5kcmN5SXNJbk52Wm5SM1lYSmxYM0J2YkdsamVWOTFjbWtpT2lKb2RIUndjem92TDNSbFkyaHViM2hoYm1SbGNpNWpiMjB2Y0hKcGRtRmplUzF3YjJ4cFkza3ZJaXdpYzI5bWRIZGhjbVZmZEc5elgzVnlhU0k2SW1oMGRIQnpPaTh2ZEdWamFHNXZlR0Z1WkdWeUxtTnZiUzkwWlhKdGN5MWhibVF0WTI5dVpHbDBhVzl1Y3k4aUxDSnpiMlowZDJGeVpWOXZibDlpWldoaGJHWmZiMlpmYjNKbklqb2lXRmxhSUVKaGJtc2lmUS5JWVYtNThhQWJKVnBSNWoxQTlqVmtkdzhndGs3ZTduMXlRWEswWnhzcFhVYWlsWDJPZFZZcFRncVNncTdIUWlHY05Dc0NTQ1FxSFNSWG5ha3huVzRkR2VwNFZuX0dvVUdFVFNZaUJJYWs1eC1uT2RRS0xZdE9tV2pacmFDMzRtbVdxcGpKamlXRUNLZW04LXExd0xQT3FVbWFYT0ZJdTJscU1tdC10ZlV3RE1taF9OV092Y3lPUkhyb0N0MXotaGJiVGFUcllMYUdSRHEzMVdISDl1Y19XOUs1NXRNbFFKSDJncEx3NWVCWkNOdmtWOHh3MUU0Q0NJbUEtTXlad2tNVGttZkxEdzI5ZXdEQjhRUW15SWFJdFBOLUs3VDRzcDRJNlpuMUpORC1PWjI0OE1MaUc2aWNrNmZ2Y2FxbUV0em9ZTDlHQms0bUVJV3ZDMzZaMXJHR3ciLCJhdWQiOiJodHRwczpcL1wvbWF0bHMtc3NvLm9wZW5iYW5raW5ndGVzdC5vcmcudWtcL2FzXC90b2tlbi5vYXV0aDIiLCJzY29wZSI6Im9wZW5pZCBuYW1lLXZlcmlmaWNhdGlvbiIsInJlcXVlc3Rfb2JqZWN0X3NpZ25pbmdfYWxnIjoiUFMyNTYiLCJleHAiOjE2Nzg4NjgyODMsImlhdCI6MTY3ODg2NDY4MywianRpIjoiNjI3ZDcwOGEtMzFhMi00NDg2LWFiN2ItOGM0NzM1ZmNmZWY1IiwicmVzcG9uc2VfdHlwZXMiOlsiY29kZSJdLCJpZF90b2tlbl9zaWduZWRfcmVzcG9uc2VfYWxnIjoiUFMyNTYifQ.df-sQP-ZTOjFoJqLSM58OPEZwX62vlNG0C-5Ez-Uarb1XW3yJ0gsaLUN0HR838Q1lsW7CAk2V7khEaz3KK4Rh6IdqbdArnLPu_ISY4ufUK40PTQ2uiVBswbvCpe2soc2MYlItRooc3irTgYK2yiwuHIgfDxB7ptpXotmh1_P6LrpuCpIQY_L9zfmXcfP2ykhk2lFFmnQDNzorRkXCETBW6fkW1OV74za0PpgMClt41-N2MOWj2bvoKsiGlRGM9vH-KNhXSaCjnwH3wEhlBoUgSvzg3pAmwdD_aUVPkUKN-uIipnBwu3xJGN2iiHRPXZ6rI2UMHrnL9M2rrQCki1Lpw</span>
+                <span class="reporter-method-output"> </span>
+                <span class="reporter-method-output">kid value Expected in Header is : String and Actual Values is : lm50dHLd0ikQTbQk0ZUpkJkhCs4</span>
+                <span class="reporter-method-output">typ value Expected in Header is :JWT and Actual Values is : JWT</span>
+                <span class="reporter-method-output">alg value Expected in Header is :PS256 and Actual Values is : PS256</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cop.api.tests.Verify_JWT_Headers</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setBaseURI</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">310 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyHeaders</span>
+                <span class="method-start">405 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

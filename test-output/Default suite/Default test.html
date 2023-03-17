@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Mar 15 12:48:03 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (916 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.cop.api.tests.Verify_JWT_Headers.verifyHeaders()'><b>verifyHeaders</b><br>Test class: com.cop.api.tests.Verify_JWT_Headers<br>Test method: Verify JWT Token Headers<br/>
+<a href="#Output-812609309" onClick='toggleBox("Output-812609309", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-812609309" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-812609309">
+Generated JWT Token value is :eyJraWQiOiJsbTUwZEhMZDBpa1FUYlFrMFpVcGtKa2hDczQiLCJ0eXAiOiJKV1QiLCJhbGciOiJQUzI1NiJ9.eyJ0b2tlbl9lbmRwb2ludF9hdXRoX3NpZ25pbmdfYWxnIjoiUFMyNTYiLCJncmFudF90eXBlcyI6WyJhdXRob3JpemF0aW9uX2NvZGUiLCJjbGllbnRfY3JlZGVudGlhbHMiXSwiYXBwbGljYXRpb25fdHlwZSI6IndlYiIsImlzcyI6ImRzZ2xTMVNxQkcxaDJrSGMzRnp3OG0iLCJyZWRpcmVjdF91cmlzIjpbImh0dHBzOlwvXC90ZWNobm94YW5kZXIuY29tXC8iXSwidG9rZW5fZW5kcG9pbnRfYXV0aF9tZXRob2QiOiJwcml2YXRlX2tleV9qd3QiLCJzb2Z0d2FyZV9pZCI6ImRzZ2xTMVNxQkcxaDJrSGMzRnp3OG0iLCJzb2Z0d2FyZV9zdGF0ZW1lbnQiOiJleUpoYkdjaU9pSlFVekkxTmlJc0ltdHBaQ0k2SW1SNmNYVjNVMVJ1YlVGaU4wb3dNV1JXUkdaSmQyb3hTMWN0WVVRNE0xUllUVEZ0Vm1Kdk9XdGtSV3M5SWl3aWRIbHdJam9pU2xkVUluMC5leUpwYzNNaU9pSlBjR1Z1UW1GdWEybHVaeUJNZEdRaUxDSnBZWFFpT2pFMk5qZ3dOelU1Tmprc0ltcDBhU0k2SWpJM1pEQTVPV1F5TlRjellUUmhZalVpTENKemIyWjBkMkZ5WlY5bGJuWnBjbTl1YldWdWRDSTZJbk5oYm1SaWIzZ2lMQ0p6YjJaMGQyRnlaVjl0YjJSbElqb2lWR1Z6ZENJc0luTnZablIzWVhKbFgybGtJam9pWkhObmJGTXhVM0ZDUnpGb01tdElZek5HZW5jNGJTSXNJbk52Wm5SM1lYSmxYMk5zYVdWdWRGOXBaQ0k2SW1SeloyeFRNVk54UWtjeGFESnJTR016Um5wM09HMGlMQ0p6YjJaMGQyRnlaVjlqYkdsbGJuUmZibUZ0WlNJNklsUmxjM1JwYm1jZ1EyOVFJaXdpYzI5bWRIZGhjbVZmWTJ4cFpXNTBYMlJsYzJOeWFYQjBhVzl1SWpvaVZHOGdWR1Z6ZENCRGIxQWlMQ0p6YjJaMGQyRnlaVjkyWlhKemFXOXVJam94TGpFc0luTnZablIzWVhKbFgyTnNhV1Z1ZEY5MWNta2lPaUpvZEhSd2N6b3ZMM1JsWTJodWIzaGhibVJsY2k1amIyMHZJaXdpYzI5bWRIZGhjbVZmY21Wa2FYSmxZM1JmZFhKcGN5STZXeUpvZEhSd2N6b3ZMM1JsWTJodWIzaGhibVJsY2k1amIyMHZJbDBzSW5OdlpuUjNZWEpsWDNKdmJHVnpJanBiSWtGVFVGTlFJbDBzSW05eVoyRnVhWE5oZEdsdmJsOWpiMjF3WlhSbGJuUmZZWFYwYUc5eWFYUjVYMk5zWVdsdGN5STZleUpoZFhSb2IzSnBkSGxmYVdRaU9pSlBRa2RDVWlJc0luSmxaMmx6ZEhKaGRHbHZibDlwWkNJNklsVnVhMjV2ZDI0d01ERTBTREF3TURBeGJFWkZPV0pSUVVjaUxDSnpkR0YwZFhNaU9pSkJZM1JwZG1VaUxDSmhkWFJvYjNKcGMyRjBhVzl1Y3lJNlczc2liV1Z0WW1WeVgzTjBZWFJsSWpvaVIwSWlMQ0p5YjJ4bGN5STZXeUpRU1ZOUUlpd2lRVWxUVUNJc0lrRlRVRk5RSWl3aVEwSlFTVWtpWFgwc2V5SnRaVzFpWlhKZmMzUmhkR1VpT2lKSlJTSXNJbkp2YkdWeklqcGJJa05DVUVsSklpd2lRVWxUVUNJc0lsQkpVMUFpTENKQlUxQlRVQ0pkZlN4N0ltMWxiV0psY2w5emRHRjBaU0k2SWs1TUlpd2ljbTlzWlhNaU9sc2lRMEpRU1VraUxDSkJTVk5RSWl3aVFWTlFVMUFpTENKUVNWTlFJbDE5WFgwc0luTnZablIzWVhKbFgyeHZaMjlmZFhKcElqb2lhSFIwY0hNNkx5OTBaV05vYm05NFlXNWtaWEl1WTI5dEx5SXNJbTl5WjE5emRHRjBkWE1pT2lKQlkzUnBkbVVpTENKdmNtZGZhV1FpT2lJd01ERTBTREF3TURBeGJFWkZPV0pSUVVjaUxDSnZjbWRmYm1GdFpTSTZJbFJGUTBoT1QxaEJUa1JGVWlCRFQwNVRWVXhVU1U1SElFeEpUVWxVUlVRaUxDSnZjbWRmWTI5dWRHRmpkSE1pT2x0ZExDSnZjbWRmYW5kcmMxOWxibVJ3YjJsdWRDSTZJbWgwZEhCek9pOHZhMlY1YzNSdmNtVXViM0JsYm1KaGJtdHBibWQwWlhOMExtOXlaeTUxYXk4d01ERTBTREF3TURBeGJFWkZPV0pSUVVjdk1EQXhORWd3TURBd01XeEdSVGxpVVVGSExtcDNhM01pTENKdmNtZGZhbmRyYzE5eVpYWnZhMlZrWDJWdVpIQnZhVzUwSWpvaWFIUjBjSE02THk5clpYbHpkRzl5WlM1dmNHVnVZbUZ1YTJsdVozUmxjM1F1YjNKbkxuVnJMekF3TVRSSU1EQXdNREZzUmtVNVlsRkJSeTl5WlhadmEyVmtMekF3TVRSSU1EQXdNREZzUmtVNVlsRkJSeTVxZDJ0eklpd2ljMjltZEhkaGNtVmZhbmRyYzE5bGJtUndiMmx1ZENJNkltaDBkSEJ6T2k4dmEyVjVjM1J2Y21VdWIzQmxibUpoYm10cGJtZDBaWE4wTG05eVp5NTFheTh3TURFMFNEQXdNREF4YkVaRk9XSlJRVWN2WkhObmJGTXhVM0ZDUnpGb01tdElZek5HZW5jNGJTNXFkMnR6SWl3aWMyOW1kSGRoY21WZmFuZHJjMTl5WlhadmEyVmtYMlZ1WkhCdmFXNTBJam9pYUhSMGNITTZMeTlyWlhsemRHOXlaUzV2Y0dWdVltRnVhMmx1WjNSbGMzUXViM0puTG5Wckx6QXdNVFJJTURBd01ERnNSa1U1WWxGQlJ5OXlaWFp2YTJWa0wyUnpaMnhUTVZOeFFrY3hhREpyU0dNelJucDNPRzB1YW5kcmN5SXNJbk52Wm5SM1lYSmxYM0J2YkdsamVWOTFjbWtpT2lKb2RIUndjem92TDNSbFkyaHViM2hoYm1SbGNpNWpiMjB2Y0hKcGRtRmplUzF3YjJ4cFkza3ZJaXdpYzI5bWRIZGhjbVZmZEc5elgzVnlhU0k2SW1oMGRIQnpPaTh2ZEdWamFHNXZlR0Z1WkdWeUxtTnZiUzkwWlhKdGN5MWhibVF0WTI5dVpHbDBhVzl1Y3k4aUxDSnpiMlowZDJGeVpWOXZibDlpWldoaGJHWmZiMlpmYjNKbklqb2lXRmxhSUVKaGJtc2lmUS5JWVYtNThhQWJKVnBSNWoxQTlqVmtkdzhndGs3ZTduMXlRWEswWnhzcFhVYWlsWDJPZFZZcFRncVNncTdIUWlHY05Dc0NTQ1FxSFNSWG5ha3huVzRkR2VwNFZuX0dvVUdFVFNZaUJJYWs1eC1uT2RRS0xZdE9tV2pacmFDMzRtbVdxcGpKamlXRUNLZW04LXExd0xQT3FVbWFYT0ZJdTJscU1tdC10ZlV3RE1taF9OV092Y3lPUkhyb0N0MXotaGJiVGFUcllMYUdSRHEzMVdISDl1Y19XOUs1NXRNbFFKSDJncEx3NWVCWkNOdmtWOHh3MUU0Q0NJbUEtTXlad2tNVGttZkxEdzI5ZXdEQjhRUW15SWFJdFBOLUs3VDRzcDRJNlpuMUpORC1PWjI0OE1MaUc2aWNrNmZ2Y2FxbUV0em9ZTDlHQms0bUVJV3ZDMzZaMXJHR3ciLCJhdWQiOiJodHRwczpcL1wvbWF0bHMtc3NvLm9wZW5iYW5raW5ndGVzdC5vcmcudWtcL2FzXC90b2tlbi5vYXV0aDIiLCJzY29wZSI6Im9wZW5pZCBuYW1lLXZlcmlmaWNhdGlvbiIsInJlcXVlc3Rfb2JqZWN0X3NpZ25pbmdfYWxnIjoiUFMyNTYiLCJleHAiOjE2Nzg4NjgyODMsImlhdCI6MTY3ODg2NDY4MywianRpIjoiNjI3ZDcwOGEtMzFhMi00NDg2LWFiN2ItOGM0NzM1ZmNmZWY1IiwicmVzcG9uc2VfdHlwZXMiOlsiY29kZSJdLCJpZF90b2tlbl9zaWduZWRfcmVzcG9uc2VfYWxnIjoiUFMyNTYifQ.df-sQP-ZTOjFoJqLSM58OPEZwX62vlNG0C-5Ez-Uarb1XW3yJ0gsaLUN0HR838Q1lsW7CAk2V7khEaz3KK4Rh6IdqbdArnLPu_ISY4ufUK40PTQ2uiVBswbvCpe2soc2MYlItRooc3irTgYK2yiwuHIgfDxB7ptpXotmh1_P6LrpuCpIQY_L9zfmXcfP2ykhk2lFFmnQDNzorRkXCETBW6fkW1OV74za0PpgMClt41-N2MOWj2bvoKsiGlRGM9vH-KNhXSaCjnwH3wEhlBoUgSvzg3pAmwdD_aUVPkUKN-uIipnBwu3xJGN2iiHRPXZ6rI2UMHrnL9M2rrQCki1Lpw<br/>
+ <br/>
+kid value Expected in Header is : String and Actual Values is : lm50dHLd0ikQTbQk0ZUpkJkhCs4<br/>
+typ value Expected in Header is :JWT and Actual Values is : JWT<br/>
+alg value Expected in Header is :PS256 and Actual Values is : PS256<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cop.api.tests.Verify_JWT_Headers@609db546</td></tr>
+</table><p>
+</body>
+</html>
