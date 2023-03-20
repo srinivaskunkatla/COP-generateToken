@@ -25,7 +25,7 @@ public class Verify_JWT_Headers extends BaseTest {
     
 	@Test(priority = 1,description="Verify JWT Token Headers")
 	public void verifyHeaders() throws IOException{
-	AllureLogger.logToAllure("Starting the test for POST method for create authentication");
+//	AllureLogger.logToAllure("Starting the test for POST method for create authentication");
 		/*******************************************************
 		 * Send a POST request to /generateToken?
 		 * and check that the response has HTTP status code 200
@@ -45,7 +45,7 @@ public class Verify_JWT_Headers extends BaseTest {
 			e.printStackTrace();
 		}
 		
-		AllureLogger.logToAllure("Asserting the response if the status code returned is 200");
+//		AllureLogger.logToAllure("Asserting the response if the status code returned is 200");
 		response.then().spec(responseSpec);
 		String token = response.then().extract().body().asString();
 		TextFileutil.updatetoken(token);
@@ -54,7 +54,7 @@ public class Verify_JWT_Headers extends BaseTest {
 	}
 	@Test(priority = 0,description="Verify JWT Token Headers")
 	public void verifyHeaderswithgetMethod() throws IOException{
-		AllureLogger.logToAllure("Starting the test for POST method for create authentication");
+//		AllureLogger.logToAllure("Starting the test for POST method for create authentication");
 		/*******************************************************
 		 * Send a POST request to /generateToken?
 		 * and check that the response has HTTP status code 200
@@ -74,7 +74,7 @@ public class Verify_JWT_Headers extends BaseTest {
 			e.printStackTrace();
 		}
 
-		AllureLogger.logToAllure("Asserting the response if the status code returned is 200");
+//		AllureLogger.logToAllure("Asserting the response if the status code returned is 200");
 		response.then().spec(responseSpec);
 		String token = response.then().extract().body().asString();
 		TextFileutil.updatetoken(token);

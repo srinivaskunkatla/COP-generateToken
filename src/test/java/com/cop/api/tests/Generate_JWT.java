@@ -21,7 +21,7 @@ public class Generate_JWT extends BaseTest {
     
 	@Test(description="To retrieve the JWT Token") 
 	public void post_CreateAuth() throws IOException{
-	AllureLogger.logToAllure("Starting the test for POST method for create authentication");
+//	AllureLogger.logToAllure("Starting the test for POST method for create authentication");
 		/*******************************************************
 		 * Send a POST request to /generateToken?
 		 * and check that the response has HTTP status code 200
@@ -42,10 +42,11 @@ public class Generate_JWT extends BaseTest {
 			e.printStackTrace();
 		}
 		
-		AllureLogger.logToAllure("Asserting the response if the status code returned is 200");
+//		AllureLogger.logToAllure("Asserting the response if the status code returned is 200");
 		response.then().spec(responseSpec);
 		String token = response.then().extract().body().asString();
 		TextFileutil.updatetoken(token);
+		System.out.println(token);
 	}
 
 	public static String readConfigurationFile(String string) {
