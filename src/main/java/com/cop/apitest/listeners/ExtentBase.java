@@ -8,15 +8,16 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-import com.cop.apitest.listeners.ExtentTestManager;
-import com.relevantcodes.extentreports.LogStatus;
+//import com.cop.apitest.listeners.ExtentTestManager;
+//import com.relevantcodes.extentreports.LogStatus;
 
 
-public abstract class ExtentBase {
+public abstract class ExtentBase  {
   
 	@BeforeMethod
     public void beforeMethod(Method method) {
-        ExtentTestManager.startTest(method.getName());
+
+//        ExtentTestManager.startTest(method.getName());
     }
     
 	
@@ -24,15 +25,15 @@ public abstract class ExtentBase {
     protected void afterMethod(ITestResult result)
     {
         if (result.getStatus() == ITestResult.FAILURE) {
-            ExtentTestManager.getTest().log(LogStatus.FAIL, result.getThrowable());
+//            ExtentTestManager.getTest().log(LogStatus.FAIL, result.getThrowable());
         } else if (result.getStatus() == ITestResult.SKIP) {
-            ExtentTestManager.getTest().log(LogStatus.SKIP, "Test skipped " + result.getThrowable());
+//            ExtentTestManager.getTest().log(LogStatus.SKIP, "Test skipped " + result.getThrowable());
         } else {
-            ExtentTestManager.getTest().log(LogStatus.PASS, "Test passed");
+//            ExtentTestManager.getTest().log(LogStatus.PASS, "Test passed");
         }
         
-        ExtentManager.getReporter().endTest(ExtentTestManager.getTest());        
-        ExtentManager.getReporter().flush();
+//        ExtentManager.getReporter().endTest(ExtentTestManager.getTest());
+//        ExtentManager.getReporter().flush();
     }
     
 

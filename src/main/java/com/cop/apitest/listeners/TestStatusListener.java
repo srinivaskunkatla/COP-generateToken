@@ -1,8 +1,8 @@
 package com.cop.apitest.listeners;
 
-import com.cop.apitest.listeners.ExtentManager;
-import com.cop.apitest.listeners.ExtentTestManager;
-import com.relevantcodes.extentreports.LogStatus;
+//import com.cop.apitest.listeners.ExtentManager;
+//import com.cop.apitest.listeners.ExtentTestManager;
+//import com.relevantcodes.extentreports.LogStatus;
 
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -23,8 +23,8 @@ public class TestStatusListener implements ITestListener {
     public void onFinish(ITestContext iTestContext) {
         System.out.println("Finishing TestClass - " + iTestContext.getName());
         //Do tier down operations for extentreports reporting!
-        ExtentTestManager.endTest();
-        ExtentManager.getReporter().flush();
+//        ExtentTestManager.endTest();
+//        ExtentManager.getReporter().flush();
     }
  
     
@@ -36,7 +36,7 @@ public class TestStatusListener implements ITestListener {
     public void onTestSuccess(ITestResult iTestResult) {
         System.out.println("Test method " + getTestMethodName(iTestResult) + " succeed");
         //ExtentReports log operation for passed tests.
-        ExtentTestManager.getTest().log(LogStatus.PASS, "Test passed");
+//        ExtentTestManager.getTest().log(LogStatus.PASS, "Test passed");
     }
  
     
@@ -47,14 +47,14 @@ public class TestStatusListener implements ITestListener {
         Object testClass = iTestResult.getInstance();
         
         //ExtentReports log and screenshot operations for failed tests.
-        ExtentTestManager.getTest().log(LogStatus.FAIL, "Test Failed");
+//        ExtentTestManager.getTest().log(LogStatus.FAIL, "Test Failed");
     }
  
     
     public void onTestSkipped(ITestResult iTestResult) {
         System.out.println("Test method " + getTestMethodName(iTestResult) + " skipped");
         //ExtentReports log operation for skipped tests.
-        ExtentTestManager.getTest().log(LogStatus.SKIP, "Test Skipped");
+//        ExtentTestManager.getTest().log(LogStatus.SKIP, "Test Skipped");
     }
  
     

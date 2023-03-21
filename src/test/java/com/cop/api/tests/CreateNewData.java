@@ -6,8 +6,8 @@ import org.testng.annotations.Test;
 
 import com.cop.api.models.Request1;
 import com.cop.api.utils.BaseTest;
-import com.cop.apitest.listeners.ExtentTestManager;
-import com.relevantcodes.extentreports.LogStatus;
+//import com.cop.apitest.listeners.ExtentTestManager;
+//import com.relevantcodes.extentreports.LogStatus;
 
 import io.restassured.http.Method;
 import io.restassured.response.Response;
@@ -45,7 +45,7 @@ public class CreateNewData extends BaseTest {
 		
 		//Verify the response code
 	
-		ExtentTestManager.getTest().log(LogStatus.INFO, "Asserting the response if the status code returned is 200");	
+//		ExtentTestManager.getTest().log(LogStatus.INFO, "Asserting the response if the status code returned is 200");
 //		AllureLogger.logToAllure("Asserting the response if the status code returned is 200");
 		response.then().spec(responseSpec);		
 

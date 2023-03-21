@@ -7,7 +7,7 @@ import org.junit.Assert;
 import org.testng.Reporter;
 
 import com.cop.api.utils.BaseTest;
-import com.mongodb.util.JSON;
+
 
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.response.Response;
@@ -15,7 +15,7 @@ import io.restassured.specification.ResponseSpecification;
 
 public class ResponseValidation extends BaseTest {
 	  
-	protected static ResponseSpecification responseSpec;
+	public static ResponseSpecification responseSpec;
 	
 	public void validateHeaderJWT(Map<Object,String> headers,String Token) {
 		try {
@@ -24,9 +24,10 @@ public class ResponseValidation extends BaseTest {
 		Assert.assertTrue(!obj.get("kid").toString().isEmpty());
 		Reporter.log(" ");
 		Reporter.log("kid value Expected in Header is : String and Actual Values is : " + obj.get("kid"));
-		Assert.assertEquals(obj.get("typ"), "JWT");
+		Assert.assertEquals("JWT",obj.get("typ") );
 		Reporter.log("typ value Expected in Header is :JWT and Actual Values is : " + obj.get("typ"));
-		Assert.assertEquals(obj.get("alg"), "PS256");
+
+		Assert.assertEquals("PS256",obj.get("alg"));
 		Reporter.log("alg value Expected in Header is :PS256 and Actual Values is : " + obj.get("alg"));
 			
 		}

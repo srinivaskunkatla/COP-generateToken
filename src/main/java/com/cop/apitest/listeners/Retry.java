@@ -1,7 +1,7 @@
 package com.cop.apitest.listeners;
 
-import com.cop.apitest.listeners.ExtentTestManager;
-import com.relevantcodes.extentreports.LogStatus;
+//import com.cop.apitest.listeners.ExtentTestManager;
+//import com.relevantcodes.extentreports.LogStatus;
 
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;

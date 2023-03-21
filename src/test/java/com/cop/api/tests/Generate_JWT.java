@@ -10,7 +10,6 @@ import org.testng.annotations.Test;
 
 import com.cop.api.helpers.ReadDataFromTxtFile;
 import com.cop.api.helpers.TextFileutil;
-import com.cop.api.utils.AllureLogger;
 import com.cop.api.utils.BaseTest;
 import com.cop.api.utils.FrameworkConstants;
 
